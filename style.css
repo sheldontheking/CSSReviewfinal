@@ -11,13 +11,100 @@ html {
     "span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 "1fr
   "span6 span6 span6 span6 span6 span6 . . . . . ." 1fr
   ". . . . . span3 span3 span3 . . . ." 1fr
+  gap: 8px;
+}
+.spam12 {grid-area: span12; background-color: gray}
+.spam6 {grid-area: span6; background-color: gray}
+.spam3 {grid-area: span3; background-color: gray}
+.spam1 {grid-area: span1; background-color: gray}
+
+/*3x3*/
+.layout2{
+  width: 90%;
+  height: 300px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  border: 2px solid pink;
+}
+.x3{
+  border:1px solid brown;
+  background-color: #f9f2a4;
+
+  /*Holy Grail*/
+  .layout3{
+    border: 2px solid red;
+    width: 99%
+    height: 300px;
+    display: grid;
+    grid:
+      "header header header" auto
+    "leftSide body rightSide" 1fr
+    "footer footer footer" auto
+    / 1fr auto;
+    gapo: 8px
+  }
+  .header{grid-area: header; background-color: #333355;}
+  .leftSide{grid-area: leftSide; background-color: #335533;}
+  .body{grid-area: body; background-color: #553333;}
+  .rightSide{grid-area: rightSide; background-color: #335533;}
+  .footer{grid-area: footer; background-color: #333355;}
+}
+/*sidebar*/
+.layoout4{
+  boarder: 2px orange solid;
+  width: 99%
+  height:300px;
+  display: grid;
+  grid:
+    "sidebar body1" 1fr
+  / auto 1fr;
+  gap:8px;
+}
+.sidebar{grid-area: sidebar; background-color: lightcoral}
+.body1{grid-area: body1; background-color: darkviolet}
+
+/*Header Main Footer*/
+.layout5{
+  border: 2px purple solid;
+  width: 99%;
+  height: 300px;
+  display: grid;
+  grid:
+    "header1" auto
+  "main" 1fr
+  "footer1" auto
+  /1fr;
+  gap: 8px;
+
+}
+.header1{grid-area: header1; background-color: lavender;}
+.main{grid-area: main; background-color: gray;}
+.footer1{grid-area: footer1; background-color: burlywood;}
+
+/*Infinite Row*/
+.layout6{
+  border: 2px solid gold;
+  width: 99%;
+  height: 300px;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 8px;
+}
+.infy{
+  border:1px solid black;
+  background-color: #d78265;
   
 }
-
-.coli1Last1 {
-  grid-column: 1 / -1;
-  background-color: #5d5822;
+/*Infinite Rows with Areas*/
+.layout7{
+  border: 2px solid green;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
 }
+
 
 /*flexbox rows*.coli1Last1*/
 
