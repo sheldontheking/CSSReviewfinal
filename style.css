@@ -1,0 +1,259 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+.layout {
+  border: 2px solid green;
+  display: grid;
+  grid:
+    "span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 "1fr
+  "span6 span6 span6 span6 span6 span6 . . . . . ." 1fr
+  ". . . . . span3 span3 span3 . . . ." 1fr
+  
+}
+
+.coli1Last1 {
+  grid-column: 1 / -1;
+  background-color: #5d5822;
+}
+
+/*flexbox rows*.coli1Last1*/
+
+.layout8 {
+  border: 2px solid red;
+  display: flex;
+  gap: 16px;
+}
+
+.flRow {
+  border: 1px solid blue;
+  background-color: #d78265
+}
+
+/*flexbox ROW Wrap*.*/
+.layout9 {
+  border: 2px solid orange;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/*flexbox filling the space*/
+.layout10 {
+  border: 2px solid #031203;
+  display: flex;
+  gap: 16px;
+}
+
+.growl {
+  flex-grow1;
+  background-color: #d78265;
+  border: 1px solid black;
+}
+
+/*Flexbox Fit to remaining space*/
+layout11 {
+  border: 2px solid #cf2661;
+  display: flex;
+  gap: 16px;
+}
+
+/*Flexbox Separate*/
+.layout12 {
+  border: 2px solid #45071d;
+  display: flex;
+  gap: 16px;
+}
+
+.marginLeft {
+  margin-left: auto;
+  background-color: #b3d765;
+  border: 1px solid black;
+}
+
+.layout5 {
+  border: 2px solid #5a1c1c;
+  display: flex;
+  gap: 16px;
+}
+
+
+.translate {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  transform: translate(50px, 50px);
+}
+
+.rotate {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  transform: translate(50px, 50px);
+
+}
+
+#myDiv {
+  transform: rotate(20deg);
+}
+
+.scale {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  margin: 150px;
+  transform: scale(2, 3);
+}
+
+.scaleX {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  margin: 150px;
+  transform: scaleX(2);
+}
+
+.scaleY {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  margin: 150px;
+  transform: scaleY(2);
+}
+
+.skew {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  transform: skew(10deg);
+}
+
+.skewX {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  transform: skew(10deg);
+}
+
+.skewY {
+  width: 300px;
+  height: 100px;
+  background-color: #dddd11;
+  border: 1px solid black;
+  transform: skew(10deg);
+}
+/*matrix()*/
+/*matrix*/
+#matrix{
+  transform: matrix(1,0,0.5,1,0,0)
+}
+#matrix2D{
+  transform: matrix(1,0,0,0.5,1,150,0)
+}
+#twoD{
+  border:3px dashed lavender;
+  background-color: lavenderblush
+}
+
+.rotate{
+  
+}
+
+
+
+
+
+
+
+
+.perry{
+  width: 100px;
+  height: 100px;
+  background-color: #c973bd;
+  border:1px solid black;
+  transition: width 2s, height 1s, background-color 3s;
+}
+
+
+
+#transition:hover{
+  width: 200px;
+  height: 200px;
+  background-color: #73c97d;
+  
+  
+}
+
+#linear:hover{
+  width:200;
+  height:200;
+  background-color: gold;
+  transition-timing-function:linear;
+}
+#ease:hover{
+  width:200;
+  height:200;
+  background-color: gold;
+  transition-timing-function:ease;
+}
+#easeIn:hover{
+  width:200;
+  height:200;
+   background-color: gold;
+  transition-timing-function:ease-in;
+}
+#easeOut:hover{
+  width:200;
+  height:200;
+     background-color: gold;
+  transition-timing-function:ease-out;
+}
+#easeInOut:hover{
+  width:200;
+  height:200;
+   background-color: gold;
+  transition-timing-function:ease-in-out;
+  transition-delay: 1s;
+}
+
+
+/*Animations*/
+/*
+@keyframes
+animation-name
+
+
+
+
+
+*/
+@keyframes example{
+  from{background-color: red
+}
+
+.cheeseCake{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 8;
+}
+
+
+
+
+
+
+
+
+
+
